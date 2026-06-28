@@ -1,0 +1,167 @@
+.header {
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+
+.logo img {
+    width: 53px;
+    height: 53px;
+}
+
+/* header navbar */
+
+.header-navbar {
+    display: flex;
+    gap: 0px;
+    position: relative;
+}
+
+.nav-header {
+    text-decoration: none;
+    color: #282c3f; 
+    font-size: 13px;
+    font-weight: 600;
+    padding: 28px 16px;
+    position: relative;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link .men:hover,
+.nav-link:hover .men {
+    border-bottom: 5px solid #ee5f73;
+}
+
+.nav-link .women:hover,
+.nav-link:hover .women {
+    border-bottom: 5px solid #fb56c1;
+}
+
+.nav-link .kids:hover,
+.nav-link:hover .kids {
+    border-bottom: 5px solid #f26a10;
+}
+
+.nav-link .home:hover,
+.nav-link:hover .home {
+    border-bottom: 5px solid #f2c210;
+}
+
+.nav-link .beauty:hover,
+.nav-link:hover .beauty {
+    border-bottom: 5px solid #0db7af;
+}
+
+.nav-link .genz:hover,
+.nav-link:hover .genz {
+    border-bottom: 5px solid #8a5cff;
+}
+
+/* studio */
+
+.nav-studio span {
+    font-size: 9px;
+    color: #ff3f6c;
+    position: relative;
+    top: -5px;
+}
+
+.nav-link .studio:hover,
+.nav-link:hover .studio {
+    border-bottom: 5px solid #ed4343;
+}
+
+/* header search bar */
+
+.header-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f5f5f6; 
+    border-radius: 10px;
+    padding: 12px 15px;
+}
+
+.header-search i {
+    font-size: 18px;
+}
+
+.header-search input {
+    width: 350px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.header-search input::placeholder {
+    color: #696e79; 
+}
+
+/* header actions */
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.header-icons {
+    padding: 12px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.header-icons i {
+    font-size: 20px;
+}
+
+.header-icons span {
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 13px; 
+    color: #282c3f;
+}
+
+/* user profile underline when hovered */
+
+.user-profile {
+    position: relative; 
+}
+
+.user-profile::after {
+    content: ""; 
+    position: absolute;
+    bottom: -8px;
+    height: 4px; 
+    width: 55px;
+    background-color: transparent;
+    transition: background-color 0.3s; 
+}
+
+.user-profile:hover::after {
+    background-color: #f16565; 
+}
